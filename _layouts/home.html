@@ -1,17 +1,90 @@
---- 
-layout: default 
+---
+layout: default
 ---
 
 
     <div class="row">
 
-    <div class="col-lg-8">
+    <div class="col-lg-6">
+
+
+      <div class="card">
+          <h1 class="card-title">About Me</h1>
+
+          <br />
+          <div class="row">
+              <div class="col-md-5">
+                  <img src="/assets/img/profile2.png" class="project-img" />
+              </div>
+              <div class="col-md-7">
+                <h4 class="project-title"> <a href="mailto:songwan.joun@gmail.com"> Songwan Joun </a>  </h4>
+
+                  <p class="project-desc">  {{ site.author_bio }}  If you want to communicate with me, please feel free to contact me. <br>
+              </div>
+              <h5> <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<strong>CV</strong>: <a href="https://drive.google.com/open?id=1jN82IO4Cl_8iXGNCr-8gyAUIVj1H4rn4" target="_blank"> here </a>
+                  &nbsp;&nbsp;&nbsp;&nbsp; <strong>Github</strong>: <a href="https://github.com/songwan" target="_blank"> songwan </a>
+                  &nbsp;&nbsp;&nbsp;&nbsp; <strong>Email</strong>: <a href="mailto:songwan.joun@gmail.com"> songwan.joun@gmail.com </a>
+              </h5>
+          </div>
+      </div>
 
         <div class="card">
-            <h1 class="card-title">About Me</h1>
+            <h1 class="card-title">Current projects</h1>
 
-            <p> {{ site.author_bio }} </p>
+            <br />
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="/assets/img/projects/bigdata.png" class="project-img" />
+                </div>
+                <div class="col-md-7">
+                    <h4 class="project-title"> Big data & Biostatistics (current project, 2019)</h4>
+                    <p class="project-desc"> To be added soon <br>
+                    <a class="project-link" href="https://gamershub.in", target="_blank", style="color: blue"> manuscript </a> &nbsp;&nbsp;&nbsp;&nbsp; <a class="project-link" href="https://gamershub.in", target="_blank", style="color: blue"> source code </a></p>
+                </div>
+            </div>
+
+            <br />
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="/assets/img/projects/gelasticnet.png" class="project-img" />
+                </div>
+                <div class="col-md-7">
+                    <h4 class="project-title"> Handling correlated genes (paper in progress, 2018) </h4>
+                    <p class="project-desc"> Handling highly correlated genes of Single-Cell sequencing data in multiple regression models<br>
+                    <a class="project-link" href="https://gamershub.in", target="_blank", style="color: blue"> manuscript </a> &nbsp;&nbsp;&nbsp;&nbsp; <a class="project-link" href="https://gamershub.in", target="_blank", style="color: blue"> source code </a></p>
+                </div>
+            </div>
         </div>
+
+        <div class="card">
+            <h1 class="card-title"> Ideas </h1>
+            <br />
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="/assets/img/projects/robust.png" class="project-img" />
+                </div>
+                <div class="col-md-7">
+                    <h4 class="project-title"> Robustifying clustering algorithm (2018) </h4>
+                    <p class="project-desc"> Robustifying clustering algorithm by adapting robust covariance matrix on the initial stage of TCLUST algorithm<br>
+                    <a class="project-link" href="https://gamershub.in", target="_blank", style="color: blue"> manuscript </a> &nbsp;&nbsp;&nbsp;&nbsp; <a class="project-link" href="https://gamershub.in", target="_blank", style="color: blue"> source code </a></p>
+                </div>
+            </div>
+
+            <br />
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="/assets/img/projects/dustwave.png" class="project-img" />
+                </div>
+                <div class="col-md-7">
+                    <h4 class="project-title"> PM10 level visualization (2017) </h4>
+                    <p class="project-desc"> RShiny, PM10 level visualization of my hometown Daegu for every bus stops <br>
+                    <a class="project-link" href="https://gamershub.in", target="_blank", style="color: blue"> manuscript </a> &nbsp;&nbsp;&nbsp;&nbsp; <a class="project-link" href="https://gamershub.in", target="_blank", style="color: blue"> source code </a></p>
+                </div>
+            </div>
+
+        </div>
+
 
         <div class="card">
             <h1 class="card-title"> Work Experience</h1>
@@ -19,12 +92,12 @@ layout: default
             <br />
             <div class="row">
                 <div class="col-md-2">
-                    <img src="/assets/img/work/google.png" class="company-logo" />
+                    <img src="/assets/img/work/uvic.png" class="company-logo" />
                 </div>
-                <div class="col-md-6">
-                    <h4 class="experience-title"> Full Stack Software Engineer</h4>
-                    <h6 class="experience-info">Google ( Jan 2017 - Present )</h6>
-                    <p class="experience-desc"> Worked on various technologies and built products which helps people globally </p>
+                <div class="col-md-10">
+                    <h4 class="experience-title"> Summer Research Assiatant</h4>
+                    <h6 class="experience-info">University of Victoria (May 2019 - Aug 2019)</h6>
+                    <p class="experience-desc"> Led simulation studies, compared machine learning models using cross-validdation </p>
 
                 </div>
             </div>
@@ -32,74 +105,165 @@ layout: default
             <br />
             <div class="row">
                 <div class="col-md-2">
-                    <img src="/assets/img/work/microsoft.png" class="company-logo" />
+                    <img src="/assets/img/work/holonyx.png" class="company-logo" />
                 </div>
-                <div class="col-md-6">
-                    <h4 class="experience-title"> Front End Engineer</h4>
-                    <h6 class="experience-info">Microsoft ( Mar 2015 - Dec 2016 )</h6>
-                    <p class="experience-desc"> Worked on various technologies and built products which helps people globally </p>
+                <div class="col-md-10">
+                    <h4 class="experience-title"> Junior Researcher</h4>
+                    <h6 class="experience-info"> Holonyx (Sep 2017 - Mar 2018)</h6>
+                    <p class="experience-desc"> Visualized levels of PM10 in Daegu city and predicted PM10 levels </p>
 
                 </div>
             </div>
 
 
-        </div>
-
-        <div class="card">
-            <h1 class="card-title"> Latest Projects</h1>
-
             <br />
             <div class="row">
-                <div class="col-md-5">
-                    <img src="/assets/img/projects/gamershub.png" class="project-img" />
+                <div class="col-md-2">
+                    <img src="/assets/img/work/knu.png" class="company-logo" />
                 </div>
-                <div class="col-md-5">
-                    <h4 class="project-title"> Gamers Hub </h4>
-                    <p class="project-desc"> A Platform built for Gamers and Game Developers built using NodeJS, VueJS, MongoDB</p>
-                    <a class="project-link" href="https://gamershub.in">https://gamershub.in</a>
+                <div class="col-md-10">
+                    <h4 class="experience-title"> Part-time R Instructor</h4>
+                    <h6 class="experience-info"> Kyungpook National University (Jul 2017 - Sep 2017)</h6>
+                    <p class="experience-desc"> Trained basic and intermediate R programming to university students </p>
+
                 </div>
             </div>
 
             <br />
             <div class="row">
-                <div class="col-md-5">
-                    <img src="/assets/img/projects/hackify.png" class="project-img" />
+                <div class="col-md-2">
+                    <img src="/assets/img/work/researchkorea.png" class="company-logo" />
                 </div>
-                <div class="col-md-5">
-                    <h4 class="project-title"> Hackify Theme for Atom Editor </h4>
-                    <p class="project-desc"> A dark hacking theme for Atom Editor</p>
-                    <a class="project-link" href="http://atom.io/themes/hackify-ui">Hackify UI</a>
+                <div class="col-md-10">
+                    <h4 class="experience-title"> Intern researcher</h4>
+                    <h6 class="experience-info"> Research Korea (Dec 2016 - Feb 2017)</h6>
+                    <p class="experience-desc"> Trained basic and intermediate R programming to university students </p>
+
                 </div>
             </div>
 
         </div>
 
-    </div>
-    <div class="col-lg-4">
 
-        <div class="card">
-
-            <h6>
-                <i class="fas fa-map-marker-alt"></i> {{ site.author_location }}</h6>
-            <h6>
-                <i class="fas fa-envelope"></i> {{ site.author_email }}</h6>
-            <h6>
-                <i class="fas fa-link"></i> {{ site.author_website_url }} </h6>
-
-        </div>
-
-        <div class="card">
-            <h1> Skills </h1>
-            <p> HTML , CSS , Javascript , PHP, Python, C</p>
-            <p> Adobe XD, Inkscape, Git, Linux </p>
-        </div>
-
-        <div class="card">
-            <h1> Coding Activity </h1>
-
-            {%- include activity.html -%}
-
-        </div>
 
     </div>
+    <div class="col-lg-6">
+
+      <div class="card">
+          <h1> Education </h1>
+          <br />
+          <div class="row">
+              <div class="col-md-2">
+                  <img src="/assets/img/work/uvic.png" class="company-logo" />
+              </div>
+              <div class="col-md-10">
+                  <h4 class="experience-title"> Master of Science, Statistics (Sep 2018 - Current)</h4>
+                  <h6 class="experience-info"> <a class="project-link" href="http://www.uvic.ca/", target="_blank", style="color: blue"> University of Victoria </a> BC, Canada </h6>
+                  <p class="experience-desc"> Supervised by <a class="project-link" href="http://www.math.uvic.ca/~xuekui/", target="_blank", style="color: blue"> Dr. Xuekui Zhang </a> <a class="project-link" href="http://vada.cs.umanitoba.ca/", target="_blank", style="color: blue"> <br> VADA </a> Trainee Scholarship (NSERC CREATE) $16,000 </p>
+              </div>
+          </div>
+
+          <br />
+          <div class="row">
+              <div class="col-md-2">
+                  <img src="/assets/img/work/knu.png" class="company-logo" />
+              </div>
+              <div class="col-md-10">
+                  <h4 class="experience-title"> Bachelor of Science, Statistics (2013 - 2017)</h4>
+                  <h6 class="experience-info"> <a class="project-link" href="http://www.knu.ac.kr", target="_blank", style="color: blue"> Kyungpook National University </a>, Daegu, South Korea </h6>
+                  <p class="experience-desc"> Minor in Computer Science <br> Exchange term at <a class="project-link" href="http://www.dal.ca", target="_blank", style="color: blue"> Dalhousie University </a>, Halifax, NS, Canada ( Sep 2015 - Apr 2016 )</p>
+
+              </div>
+          </div>
+
+      </div>
+
+
+      <div class="card">
+          <h1> Statistical Skills </h1>
+          <p> •	Took bioinformatics, survival analysis, robust, and ML courses </p>
+          <p> • Performance comparison of Neural Network and traditional Statistical methods by data size </p>
+          <p> •	Handling highly correlated genes of Single-Cell sequencing data in multiple regression models </p>
+
+      </div>
+
+        <div class="card">
+            <h1> Programming Skills </h1>
+
+        <br />
+        <div class="row">
+            <div class="col-md-2">
+                <img src="/assets/img/projects/R.png" class="company-logo" />
+            </div>
+            <div class="col-md-10">
+                <h4 class="experience-title"> R </h4>
+                <h6 class="experience-info"> Have a good understanding of R</h6>
+                <p class="experience-desc"> Conducted simulation studies, applied statistical methods </p>
+
+            </div>
+        </div>
+
+        <br />
+        <div class="row">
+            <div class="col-md-2">
+                <img src="/assets/img/projects/computecanada.png" class="company-logo" />
+            </div>
+            <div class="col-md-10">
+                <h4 class="experience-title"> Compute Canada </h4>
+                <h6 class="experience-info"> High performance computing system </h6>
+                <p class="experience-desc"> Used Compute Canada to handle big data, batch and parallel jobs </p>
+
+            </div>
+        </div>
+
+        <br />
+        <div class="row">
+            <div class="col-md-2">
+                <img src="/assets/img/projects/python.png" class="company-logo" />
+            </div>
+            <div class="col-md-10">
+                <h4 class="experience-title"> Python </h4>
+                <h6 class="experience-info"> Basic knowledge in Python </h6>
+                <p class="experience-desc"> Made digit classifier using CNN, Tensorflow </p>
+
+            </div>
+        </div>
+
+
+        <br />
+        <div class="row">
+            <div class="col-md-2">
+                <img src="/assets/img/projects/sas.png" class="company-logo" />
+            </div>
+            <div class="col-md-10">
+                <h4 class="experience-title"> SAS </h4>
+                <h6 class="experience-info"> SAS Certified Base Programmer for SAS 9 (SAS) </h6>
+                <p class="experience-desc"> Basic knowledge in SAS </p>
+
+            </div>
+        </div>
+
+        <br />
+        <div class="row">
+            <div class="col-md-2">
+                <img src="/assets/img/projects/ibm.png" class="company-logo" />
+            </div>
+            <div class="col-md-10">
+                <h4 class="experience-title"> IBM Data Scientist</h4>
+                <h6 class="experience-info"> Mastery Award for Students (IBM) </h6>
+                <p class="experience-desc"> Took IBM Data Scientist Course </p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card">
+        <h1> Hobbies </h1>
+        <p> •	Love Swimming </p>
+        <p> • Blogging </p>
+        <p> •	Learning languages including programming languages!</p>
+
+    </div>
+
     </div>

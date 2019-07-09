@@ -21,7 +21,6 @@ Follow this [Guide to Get Started](https://sujaykundu.com/jekyll/2019/06/22/buil
 
 
 
- 
 
 
 
@@ -31,7 +30,8 @@ Follow this [Guide to Get Started](https://sujaykundu.com/jekyll/2019/06/22/buil
 
 
 
-  
+
+
 
 
 
@@ -40,5 +40,3 @@ Follow this [Guide to Get Started](https://sujaykundu.com/jekyll/2019/06/22/buil
 ## Licence
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-

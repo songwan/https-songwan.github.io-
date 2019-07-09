@@ -1,28 +1,26 @@
-title: devlopr jekyll
-subtitle: A Jekyll Theme built for Developers
+title: Songwan's blog
+subtitle: Statistics graduate school life
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Statistics, machine learning, Biostatistics, all about Statistics.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 author_logo: profile.png
-disqus_shortname: sujay-kundu  #for comments using disqus
-author: devlopr
-author_bio: Hello, my name is John Doe.I am an award winning Full Stack Web Developer and UI/UX Javascript specialist.Check out my blog articles, React.JS and Vue.JS UI components at the code laboratory.Feel free to take a look at my latest projects below.Based in London, UK. 
-author_email: "john@devlopr.com"
-author_location: India
-author_website_url: "https://yourwebsite.com"
+disqus_shortname: songwan  #for comments using disqus
+author: Songwan
+author_bio: Hello, my name is Songwan Joun. I am graduate student studying Statistics at University of Victoria, Canada. This blog is a place where I post my interests and ideas. My interests lies in Machine learning and Biostatistics.
+author_email: <a href="mailto:songwan.joun@gmail.com"> songwan.joun@gmail.com </a>
+author_location: <a href="https://www.uvic.ca/science/math-statistics" target="_blank"> University of Victoria</a>
+author_website_url: <a href="https://github.com/songwan" target="_blank"> https://github.com/songwan </a>
 
 # social links
-twitter_username: yourusername
-github_username:  yourusername
-facebook_username: yourusername
-linkedin_username: yourusername
-behance_username: yourusername
-instagram_username: yourusername
-medium_username: yourusername 
-telegram_username: yourusername
-dribbble_username: yourusername 
-flickr_username: yourusername
+#twitter_username: songwan-joun
+github_username:  songwan
+#facebook_username: songwan
+linkedin_username: songwan-joun
+#behance_username: songwan
+#instagram_username: wanny-joun
+#medium_username: songwan
+#telegram_username: songwan
+#dribbble_username: songwan
+#flickr_username: songwan

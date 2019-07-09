@@ -1,5 +1,5 @@
---- 
-layout: default 
+---
+layout: default
 ---
 
     <div class="row">
@@ -29,13 +29,28 @@ layout: default
         </div>
 
         <div class="col-lg-4">
-            <div class="card">
-                <div class="card-header"> About {{ site.author }} </div>
-                <div class="card-body text-dark">
-                    <p> devlopr is a rubygem ( Jekyll Theme ) built for Developers. Anyone can create their website and host it freely
-                        like this. All you need is to follow the simple steps in the DOCS !!</p>
-                </div>
-            </div>
+          <div class="card">
+            <div class="card-header"> About {{ site.author }} </div>
+              <br />
+              <div class="row">
+                  <div class="col-md-3">
+                      <img src="/assets/img/profile3.png" width="130px" align="center" />
+                  </div>
+                  <div class="col-md-9">
+
+                    <div class="card-body text-dark">
+
+                         {{ site.author_bio }}
+
+                    </div>
+                  </div>
+              </div>
+              <p align="middle">
+                  <strong>CV</strong>: <a href="https://drive.google.com/open?id=1jN82IO4Cl_8iXGNCr-8gyAUIVj1H4rn4" target="_blank"> here </a>
+                  &nbsp;&nbsp;&nbsp; <strong>Github</strong>: <a href="https://github.com/songwan" target="_blank"> songwan </a>
+                  &nbsp;&nbsp;&nbsp; <strong>Email</strong>: <a href="mailto:songwan.joun@gmail.com"> songwan.joun@gmail.com </a>
+              </p>
+          </div>
             <div class="card">
 
                 <div class="card-header">Categories </div>
