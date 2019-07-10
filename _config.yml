@@ -8,7 +8,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 author_logo: profile.png
 disqus_shortname: songwan  #for comments using disqus
 author: Songwan
-author_bio: Hello, my name is Songwan Joun. I am graduate student studying Statistics at University of Victoria, Canada. This blog is a place where I post my interests and ideas. My interests lies in Machine learning and Biostatistics.
+author_bio: Hello, I'm Songwan Joun. I am graduate student studying Statistics at University of Victoria, Canada. This blog is a place where I post my interests and ideas. My interests lies in Machine learning and Biostatistics.
 author_email: <a href="mailto:songwan.joun@gmail.com"> songwan.joun@gmail.com </a>
 author_location: <a href="https://www.uvic.ca/science/math-statistics" target="_blank"> University of Victoria</a>
 author_website_url: <a href="https://github.com/songwan" target="_blank"> https://github.com/songwan </a>

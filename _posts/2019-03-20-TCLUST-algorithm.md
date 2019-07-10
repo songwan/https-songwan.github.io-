@@ -12,12 +12,13 @@ author: Songwan
 
 <hr>
 ### Note
-<p align="justify" style='line-height:200%; font-size:120%'> This post is a summary of TCLUST algorithm by Fritz et al., and García-Escudero et al. The detailed listings of references are listed at the end of this post. All of the contents or ideas in this post are from these references. It is done as a Robust Statistics course project. This is a link for <a href="http://drive.google.com/uc?export=view&id=1a5COCf9MJIeG1u9mzsSqtsXkOHki9aNB" target="_blank">full report including examples and simulation studies</a> and <a href="http://drive.google.com/uc?export=view&id=1a5COCf9MJIeG1u9mzsSqtsXkOHki9aNB" target="_blank"> R source code</a>.</p>
-
+<p align="justify" style='line-height:200%; font-size:120%'>
+This post is a summary of TCLUST algorithm by Fritz et al., and García-Escudero et al. The detailed listings of references are listed at the end of this post. All of the contents or ideas in this post are from these references. It is done as a Robust Statistics course project. This is a link for <a href="http://drive.google.com/uc?export=view&id=1a5COCf9MJIeG1u9mzsSqtsXkOHki9aNB" target="_blank">full report including examples and simulation studies</a> and <a href="http://drive.google.com/uc?export=view&id=1a5COCf9MJIeG1u9mzsSqtsXkOHki9aNB" target="_blank"> R source code</a>.
+</p>
 <hr>
 ### 1. Introduction  
 <p align="justify" style='line-height:200%; font-size:120%'>
- K-means is an unsupervised learning algorithm widely used in cluster analysis. However, K-means relies heavily on four major assumptions. 1) Number of clusters, k, 2) SSE is the right objective to minimize, 3) every cluster has the same shape, and 4) every observation is equally important for each cluster. We will discuss the sensible choice of k in section 4.4. Minimizing SSE may not be the right objective, as clusters often have different variances. <br><br>
+ K-means is an unsupervised learning algorithm widely used in cluster analysis. However, K-means relies heavily on four major assumptions. 1) Number of clusters, k, 2) SSE is the right objective to minimize, 3) every cluster has the same shape, and 4) every observation is equally important for each cluster. We will discuss the sensible choice of k in section 4.4. Minimizing SSE may not be the right objective, as clusters often have different variances.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Assuming that SSE is minimized for any cluster leads to clusters having the same shape (e.g. scatter matrices are equal). This assumption does not hold when spurious observations or groups are introduced, which is the essence of the robustness of an estimator. We will illustrate the results of K-means with a simulation performed in this post. Similar to the classical means, trimming the data is one of the remedies we should always be looking to perform. Background noise and outlying groups could unnecessarily give too much information, leading to not being able to analyze what we are actually interested in.<br><br>
 
@@ -59,7 +60,7 @@ In the expectation step, the goal is to calculate posterior probabilities for ea
 
 ### 3.3.	Concentration step
 <p align="justify" style='line-height:200%; font-size:120%'>
-After we calculate posterior probabilities for each observation, we can trim [nα] observations. Let \(D(x_i;θ^l)\) be the maximum of \(D_j(x_i;θ^l)\) across all clusters for observation \(x_i\). Then, \(D(x_i;θ^l)\) is defined as $$D(x_i;θ^l )=max{D_1 (x_i;θ^l), …,D_k(x_i;θ^l)}$$ We can calculate \(D(x_i;θ^l)\) for all of the observations and sort it from smallest to largest. Then we trim the smallest [nα] observations as possible outliers. For the non-outlying observations, we can assign them to the clusters which provides the largest posterior probabilities (i.e. assign \(x_i\) to cluster j if \(D_j(x_i;θ^l)=D(x_i;θ^l))\). As a result, we will now have the partition \(R_0,R_1,…, R_k\) for every observation. Here, \(R_0\) is the partition for outlying observations with smallest [nα] \(D(x_i;θ^l)’s\).
+After we calculate posterior probabilities for each observation, we can trim [nα] observations. Let \(D(x_i;θ^l)\) be the maximum of \(D_j(x_i;θ^l)\) across all clusters for observation \(x_i\). Then, \(D(x_i;θ^l)\) is defined as $$D(x_i;θ^l )=max{D_1 (x_i;θ^l), …,D_k(x_i;θ^l)}$$ We can calculate \(D(x_i;θ^l)\) for all of the observations and sort it from smallest to largest. Then we trim the smallest [nα] observations as possible outliers. For the non-outlying observations, we can assign them to the clusters which provides the largest posterior probabilities (i.e. assign \(x_i\) to cluster j if \(D_j(x_i;θ^l)=D(x_i;θ^l)\)). As a result, we will now have the partition \(R_0,R_1,…, R_k\) for every observation. Here, \(R_0\) is the partition for outlying observations with smallest [nα] \(D(x_i;θ^l)’s\).
 </p>
 
 <p align="justify"> </p>
@@ -91,9 +92,12 @@ Giving constraints on scatter matrices improves robustness on clustering and avo
 <hr>
 
 ### References  
-- Fritz, H., Garcıa-Escudero, L. A., & Mayo-Iscar, A. (2012). tclust: An R package for a trimming approach to cluster analysis. Journal of Statistical Software, 47(12), 1-26.  
+<p align="justify" style='line-height:200%; font-size:120%'>
+- Fritz, H., Garcıa-Escudero, L. A., & Mayo-Iscar, A. (2012). tclust: An R package for a trimming approach to cluster analysis. Journal of Statistical Software, 47(12), 1-26.  <br>
 
-- Fritz, H., GarcíA-Escudero, L. A., & Mayo-Iscar, A. (2013). A fast algorithm for robust constrained clustering. Computational Statistics & Data Analysis, 61, 124-136.  
+- Fritz, H., GarcíA-Escudero, L. A., & Mayo-Iscar, A. (2013). A fast algorithm for robust constrained clustering. Computational Statistics & Data Analysis, 61, 124-136.  <br>
 
-- García-Escudero, L. A., Gordaliza, A., Matrán, C., & Mayo-Iscar, A. (2008). A general trimming approach to robust cluster analysis. The Annals of Statistics, 36(3), 1324-1345.
+- García-Escudero, L. A., Gordaliza, A., Matrán, C., & Mayo-Iscar, A. (2008). A general trimming approach to robust cluster analysis. The Annals of Statistics, 36(3), 1324-1345. <br>
+
+</p>
 <hr>
