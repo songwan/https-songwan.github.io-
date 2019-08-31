@@ -3,7 +3,7 @@ title: Digit Classification with CNN
 layout: post
 summary: Convolutional Neural Network
 categories:
-    - deep learning
+    - deepLearning
 thumbnail: posts/CNN.png
 author: Songwan
 ---

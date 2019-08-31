@@ -7,6 +7,8 @@ categories:
 summary: RShiny visualization of PM10 in Daegu City, South Korea
 thumbnail: projects/dustwave.png
 ---
+<hr />
+This is a link for <a href="https://github.com/songwan/PM10_visualization" target="_blank">full code</a>
 
 <hr />
 <h3> Demonstration Video </h3>
