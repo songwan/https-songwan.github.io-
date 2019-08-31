@@ -4,6 +4,7 @@ layout: post
 summary: Robust clustering algorithm by trimming approach
 categories:
     - statistics
+    - paperReview
 thumbnail: posts/tclust.png
 author: Songwan
 ---
