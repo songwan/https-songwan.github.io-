@@ -1,4 +1,4 @@
- width="100%"---
+---
 title: Digit Classification with CNN
 layout: post
 summary: Convolutional Neural Network
