@@ -1,7 +1,7 @@
 ---
 title: Microarrays
 layout: post
-summary: Gene Expression Microarrays
+summary: Cel, cdf file, Normalization, MA plot, GEI, RMA
 categories:
     - Biostat
 thumbnail: posts/microarray2.png
@@ -163,5 +163,5 @@ RMA등 새로운 GEI를 계산하기 위한 방법들이 고안되었을 때, �
 - x축을 보면 MAS4는 범위가 -5 ~ 10 이지만 RMA는 log scale을 사용하므로 범위가 2 - 12임을 알 수 있다.
 <hr>
 #### 최종 데이터셋  
-결과적으로 RMA gene expression level을 계산한 후 우리는 각 행이 gene 혹은 transcripts로 이루어지고 (cdf파일에 따라 다름), column은 각 샘플 혹은 condition으로 이루어진 큰 matrix를 만들 수 있다. 이 matrix를 분석에서 활용한다. 
+결과적으로 RMA gene expression level을 계산한 후 우리는 각 행이 gene 혹은 transcripts로 이루어지고 (cdf파일에 따라 다름), column은 각 샘플 혹은 condition으로 이루어진 큰 matrix를 만들 수 있다. 이 matrix를 분석에서 활용한다.
 <hr>

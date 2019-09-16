@@ -78,3 +78,12 @@ Power
 - $$1-\beta$$를 고정된 power 수준이라고 하고, $$Power_1(n_1) = Power_2(n_2) = 1-\beta$$라고 하자.
 - 그러면, $$n_2/n_1$$를 T1에서 T2로의 **relative efficiency**라고 한다.
 <hr>
+#### Chapter 2. The Dichotonous Data Problem  
+CH 2.1 (Binomial test), CH 2.2 (Point estimation for p), CH 2.3 (Confidence Interval for p)는 기초이므로 책 읽어보기.
+<hr>
+#### Supplement to Chapter 2.  
+Randomized tests (one-tail)  
+1) Type 1 error at a Binomial Test
+> - Consider H0 : p= 0.6
+
+<hr>
