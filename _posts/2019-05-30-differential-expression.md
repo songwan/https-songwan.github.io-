@@ -43,4 +43,19 @@ author: Songwan
 <p align="center"> <img src="/assets/img/posts/qqplot.png"  width="50%"></p>  
 <hr>
 3) **Wilcoxon Rank Sum Test** (데이터가 정규분포를 따르지 않는 경우)
+- 행에 있는 모든 데이터에 순위를 매긴후, Treatment와 Control그룹의 랭크의 합을 각각 $$T_T$$ 와 $$T_C$$라 하자.
+- 예) 10개의 normal sample (control) 과 10개의 cancer sample (treatment)이 있다고 하면, min(T) = 55 ( = 1 + 2 + ... + 10)이고 max(T) = 155 ( = 11 + 12 + ... + 20)이다.
+- Significance rule은 permutation에 의해 결정되는데, 예를 들어 위의 예시의 경우, 랜덤으로 많은 수의 조합 (permutation)을 simulation해서 분포를 그려보면 다음과 같다.
+<p align="center"> <img src="/assets/img/posts/permutation.png"  width="50%"></p>  
+- 이 경우, T = 150 이상일 경우에 Significant하다고 할 수 있다. 여기서 150이라는 숫자는 U table (transformation of T)에서 도출할 수 있다.
+- 하지만 이 방법은 nonparametric한 방법이므로, 샘플의 수가 적을 땨에는 power이 작다는 단점이 있다.
+<hr>
+#### Linear Model for Differential Expression
+> - Linear model : $$Y_{ijk} = \mu_{j} + \alpha_{ij} + error_{ijk}$$ 은 **각 gene j마다의 seperate한 linear model**로써,
+>> - $$k$$ : 특정 sample
+>> - $$Y_{ijk}$$ : RMA analysis를 통한 expression index
+>> - $$\mu_{j}$$ : gene j의 전체 experiment (RMA expression index)에 대한 평균 expression level
+>> - $$\alpha_{ij}$$ : i-th condition의 overall mean ($$\sum_{i}\alpha_{ij}=0$$)으로부터의 편차(deviation)
+> - 이 모델에서, 3개의 treatment (mutant)와 3개의 control (wildtype)에 대해, 귀무가설 $$H_0$$ : $$\alpha_{mu}$$ - $$\alpha_{widetype}$$ $$= 0$$에대해 검정한다.
+
 <hr>
